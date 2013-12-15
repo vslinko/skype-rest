@@ -1,0 +1,28 @@
+{
+    "name": "skype-rest",
+    "version": "0.1.0",
+    "description": "Skype REST API",
+    "keywords": ["skype", "rest"],
+    "homepage": "https://github.com/vslinko/skype-rest",
+    "bugs": {
+        "url": "https://github.com/vslinko/skype-rest/issues",
+        "email": "vyacheslav.slinko@gmail.com"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Vyacheslav Slinko",
+        "email": "vyacheslav.slinko@gmail.com"
+    },
+    "main": "lib/skype-rest",
+    "bin": {
+        "skype-rest": "bin/skype-rest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/vslinko/skype-rest.git"
+    },
+    "dependencies": {
+        "skype-api": "~0.1",
+        "connect": "~2.12"
+    }
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+/**
+ * Skype REST
+ *
+ * Copyright (c) 2013 Vyacheslav Slinko
+ * Licensed under the MIT License
+ */
+
+
+var connect = require('connect');
+var skypeREST = require('..');
+
+
+var app = connect();
+
+app.use(connect.logger());
+app.use(connect.json());
+app.use(skypeREST());
+
+app.listen(3000, function() {
+    console.log('Server started');
+});
