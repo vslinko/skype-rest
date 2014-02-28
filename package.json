@@ -1,6 +1,6 @@
 {
     "name": "skype-rest",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Skype REST API",
     "keywords": ["skype", "rest"],
     "homepage": "https://github.com/vslinko/skype-rest",
@@ -22,7 +22,7 @@
         "url": "git://github.com/vslinko/skype-rest.git"
     },
     "dependencies": {
-        "skype-api": "~0.1",
-        "connect": "~2.12"
+        "skype-api": "^0.2",
+        "express": "^3.4"
     }
 }

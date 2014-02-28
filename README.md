@@ -6,13 +6,20 @@
 
 ```js
 var skypeREST = require('skype-rest');
-var connect = require('connect');
+var express = require('express');
 
-var app = connect();
-app.use(connect.json());
+var app = express();
+app.use(express.json());
 app.use(skypeREST());
 
 app.listen(3000);
+```
+
+## Installation
+
+```bash
+npm install --save skype-rest@^0.2
+pip install Skype4Py zerorpc gevent
 ```
 
 ## API
@@ -114,7 +121,8 @@ app.listen(3000);
 }
 ```
 
-* 200 OK
+* 201 Created
+* 400 Bad Request
 * 500 Internal Server Error
 
 
