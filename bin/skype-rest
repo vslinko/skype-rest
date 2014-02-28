@@ -13,6 +13,9 @@ var skypeREST = require('..');
 
 var app = express();
 
+if (process.env.SKYPE_REST_USERNAME) {
+    app.use(express.basicAuth(process.env.SKYPE_REST_USERNAME, process.env.SKYPE_REST_PASSWORD));
+}
 app.use(express.logger());
 app.use(express.json());
 app.use(skypeREST());
